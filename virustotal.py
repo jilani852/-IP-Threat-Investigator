@@ -22,7 +22,7 @@ def data_fields(data, ip):
 
 def get_threat_ip_details_extra(ip):
     try:
-        headers = {"x-apikey": ""}#put your api key here 
+        headers = {"x-apikey": " "}#put your api key here 
         url = f"https://www.virustotal.com/api/v3/ip_addresses/{ip}"
         response = requests.get(url, headers=headers)
         data = response.json()
